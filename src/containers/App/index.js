@@ -27,12 +27,29 @@ import Resumes  from '../../components/Resumes'
 function App() {
   return (
     <div className="App">
-      
-            
+          <Nav />
+          <Route path="/" component={Sliders} exact />
+          <Route path="/" component={Features} exact />
+          <Route path="/" component={Banner} exact />
+          <Route path="/" component={About} exact />
+          <Route path="/" component={Projects} exact />
+          <Route path="/" component={Services} exact />
+         
+      <Switch>
+              <Route path="/menu/contact-us" component={Email} exact />
+              <Route path="/content/contact-us" component={Email} exact />
+              <Route path="/content/jobs" component={Jobs} exact />
+              <Route path="/content/search" component={Search} exact />
+              <Route path="/content/submit-resume" component={Resumes} exact />
               <Route path="/content/:id" component={Article} exact />
-           
+              <Route path="/jobs/:id" component={Job} exact />
+              <Route path="/menu/:id" component={Category} exact />
              
-   
+              
+          </Switch>
+          
+         
+          <Footer />
           
           
     </div>
