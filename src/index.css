@@ -787,3 +787,8 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
 #no {
     display:none;
 }
+.logo-menu {
+    max-height: 56px;
+    width: 232px;
+    height: 42px;
+}

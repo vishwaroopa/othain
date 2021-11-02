@@ -49,7 +49,7 @@ class Nav extends React.Component {
                                             <span className='icon-bar'></span>{' '}
                                             <span className='icon-bar'></span>{' '}
                                         </button>
-                                        <Link to="/"><img src={logo} /></Link>
+                                        <Link to="/"><img class="logo-menu" src={logo} /></Link>
                                     </div>
 
                                     <div
