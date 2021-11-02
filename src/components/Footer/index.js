@@ -36,19 +36,12 @@ const Footer = () => {
                             
                         </div>
                     </div>
-                    <div className='col-md-3 col-md-offset-1 contact-info'>
+                    <div className='col-md-3'>
                         <div className='contact-item'>
                             <h3>New Jersey</h3>
                             
                         </div>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-phone'></i> {global.Footer.number}<br/>
 
-                </span>
-                            </p>
-                        </div>
                         <div className='contact-item'>
                             <p>
                                 <span>
@@ -72,18 +65,10 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className='col-md-3 col-md-offset-1 contact-info'>
+                    <div className='col-md-3'>
                         <div className='contact-item'>
                             <h3>Hyderabad</h3>
                            
-                        </div>
-                        <div className='contact-item'>
-                            <p>
-                                <span>
-                                    <i className='fa fa-phone'></i> {global.Footer.number}<br />
-
-                                </span>
-                            </p>
                         </div>
                         <div className='contact-item'>
                             <p>

@@ -489,7 +489,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 5px 0 5px 0;
-	background: #323232;
+	background: #ffffff;
 	color: rgba(255,255,255,.75);
 	padding-bottom: 40px;
 }
@@ -505,18 +505,36 @@ header .intro-text {
 #contact .section-title {
 	margin-bottom: 40px;
 }
-	#contact p {
-		color: white !important;
-		mARGIN-TOP: 10PX;
-	}
-#contact .section-title p {
+#contact p {
+	font-family: "Hind",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif !important;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 16px;
+	text-transform: none;
+	letter-spacing: 0;
+	line-height: 24px;
+	color: rgba(132,137,145,1);
+}
+#contact .section-title p {
+	font-family: "Hind",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif!important;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	text-transform: none;
+	letter-spacing: 0;
+	line-height: 24px;
+	color: rgba(132,137,145,1);
+}
 }
 #contact h2 {
-	color: #fff;
-	margin-top: 10px;
-	margin-bottom: 15px;
-	padding-bottom: 15px;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 18px;
+	text-transform: none;
+	letter-spacing: -0.01em;
+	line-height: 30px;
+	color: rgba(49,50,51,1);
 }
 #contact .section-title h2::after {
 	position: absolute;
@@ -528,11 +546,14 @@ header .intro-text {
 	left: 30px;
 }
 #contact h3 {
-	color: #fff;
-	
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	font-weight: 400;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 18px;
+	text-transform: none;
+	letter-spacing: -0.01em;
+	line-height: 30px;
+	color: rgba(49,50,51,1);
 }
 #contact form {
 	padding-top: 20px;
@@ -594,11 +615,16 @@ color: #777;
 #contact .contact-item {
 	margin: 5px 0;
 }
-#contact .contact-item span {
-	color: rgba(255,255,255,1);
-	margin-bottom: 10px;
-	display: block;
-}
+	#contact .contact-item span {
+		font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+		font-weight: 600;
+		font-style: normal;
+		font-size: 18px;
+		text-transform: none;
+		letter-spacing: -0.01em;
+		line-height: 30px;
+		color: rgba(49,50,51,1);
+	}
 #contact .contact-item i.fa {
 	margin-right: 10px;
 }
