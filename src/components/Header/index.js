@@ -32,7 +32,7 @@ const Sliders = () => {
                                                             <h1>
                                                                 {slider.title}
                                                             </h1>
-                                                            <p>{slider.subtitle}</p>
+                                                            <h5>{slider.subtitle}</h5>
                                                             <ReactMarkdown source={slider.description} />
                                                             <Link to={slider.url} className='btn btn-custom btn-lg page-scroll'>
                                                                 Learn More
