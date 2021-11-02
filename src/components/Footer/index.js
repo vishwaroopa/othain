@@ -23,7 +23,7 @@ const Footer = () => {
         <div>
             <div id='contact'>
                 <div className='container'>
-                    <div className='col-md-3'>
+                    <div className='col-md-4'>
                         <div className='row'>
                             <div className='section-title'>
                                 <Link to="/"><img src={imageUrl} alt="logo" /></Link>
@@ -93,7 +93,7 @@ const Footer = () => {
                             </div>
 
                     </div>
-                    <div className='col-md-3 col-md-offset-1 contact-info'>
+                    <div className='col-md-2  contact-info'>
                         <div className='contact-item'>
                             <h3>Resources</h3>
                             <p>

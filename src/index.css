@@ -5,15 +5,14 @@
     display: none !important;
 }
 h1 {
-    border-bottom: 1px solid #e8e8e8;
-    margin: 0 0 30px;
-    padding: 10px 0;
-    text-transform: uppercase;
-    font-size: 24px;
-    color: #34373e;
-    font-weight: normal;
-    line-height: 1.2em;
-    font-family: 'Roboto',sans-serif !important;
+    font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    text-transform: none;
+    letter-spacing: -0.005em;
+    line-height: 62px;
+    color: #3E4249;
 }
 
 #category {
