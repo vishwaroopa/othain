@@ -30,10 +30,11 @@ function App() {
           <Nav />
           <Route path="/" component={Sliders} exact />
           <Route path="/" component={Features} exact />
-          <Route path="/" component={Banner} exact />
+        
           <Route path="/" component={About} exact />
           <Route path="/" component={Projects} exact />
           <Route path="/" component={Services} exact />
+          <Route path="/" component={Banner} exact />
          
       <Switch>
               <Route path="/menu/contact-us" component={Email} exact />

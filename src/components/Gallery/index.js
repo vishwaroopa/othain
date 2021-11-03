@@ -16,10 +16,7 @@ const Projects = () => {
                  <div className='row'>
                    <div className='portfolio-items'>
                                     {projects.map((project, i) => {
-                         const imageUrl =
-                                            process.env.NODE_ENV !== "development"
-                                 ? project.image.url
-                                                : process.env.REACT_APP_BACKEND_URL + project.image.url;
+                         
                         return (
 
                         <div className='col-sm-6 col-md-4 col-lg-4'>
@@ -35,11 +32,7 @@ const Projects = () => {
                                                 <h4>{project.title}</h4>
                                                 <p>{project.description}</p>
                                         </div>
-                                        <img
-                                                src={imageUrl}
-                                            className='img-responsive'
-                                            alt='Project Title'
-                                        />{' '}
+                                       
                                     </a>{' '}
                                 </div>
                             </div>

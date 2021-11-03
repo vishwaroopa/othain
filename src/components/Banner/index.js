@@ -17,10 +17,14 @@ const Banner = () => {
                     <section class="red-bg">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-lg-8 col-md-8 col-sm-8">
                                     <div class="features-14">
-                                        <h1 class="heading">{homepage.banner1.title}</h1>
                                         <h1 class="heading"><ReactMarkdown source={homepage.contactbanner.text} /></h1>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="features-14">
+                                        Contact Us
                                     </div>
                                 </div>
                             </div>

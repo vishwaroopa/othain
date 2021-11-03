@@ -192,20 +192,42 @@ hr {
 .section-title p {
 	font-size: 18px;
 }
-.btn-custom {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	top: 25%;
+	padding: 114px 0px 114px 0px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-	padding: 14px 34px;
-	letter-spacing: 1px;
-	margin: 0;
+	text-align: center;
+	text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+}
+.red-bg {
+	background: linear-gradient( 45deg, rgba(7,71,166,1) 0%, rgba(0,101,255,1) 100%)!important;
+}
+.btn-custom {
+	margin-top: 30px;
+	float: left;
+	background-image: linear-gradient(to right, rgb(81, 203, 27) 50%, rgb(255, 255, 255) 50%);
+	animation-delay: 2678ms;
+	animation-duration: 1605ms;
+	color: #ffffff;
+	-o-transition: .3s all linear;
+	transition: all .3s linear;
+	border-style: solid;
+	background-size: 220% 100%;
+	border-radius: 3 px;
 	font-size: 15px;
-	font-weight: 500;
-	border-radius: 25px;
-	transition: all 0.5s linear;
-	border: 0;
+	/* line-height: 12px; */
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif !important;
+	font-weight: 600;
+	/* font-style: normal; */
+	padding: 13px 34px;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
@@ -268,7 +290,7 @@ address, dl, fieldset, figure, ol, p, pre, ul {
  margin: 0px!important;
 }
 .intro p {
-	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif!important;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 16px;
@@ -278,14 +300,16 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 	color: white;
 }
 .intro h5 {
-	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif!important;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 26px;
 	text-transform: none;
 	letter-spacing: -0.01px;
 	line-height: 26px;
+	text-align: left;
 	color: white;
+	margin-top: 20px;
 }
 header .intro-text {
 	padding-top: 140px;
@@ -543,7 +567,7 @@ header .intro-text {
 	color: rgba(132,137,145,1);
 }
 #contact .section-title p {
-	font-family: "Hind",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif!important;
+	font-family: "Hind",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif !important;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
@@ -551,7 +575,10 @@ header .intro-text {
 	letter-spacing: 0;
 	line-height: 24px;
 	color: rgba(132,137,145,1);
+	padding-top: 20px;
 }
+#contact ul {
+	text-align: right;
 }
 #contact h2 {
 	font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
@@ -676,7 +703,7 @@ color: #777;
 	background: #fff;
 }
 /* Footer Section*/
-#footer {
+	#footer {
 	background: #ffffff;
 	padding: 0px 0;
 }

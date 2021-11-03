@@ -802,3 +802,13 @@ body, h1, h2, h3, h4, h5, h6, p, li, span, a {
     width: 232px;
     height: 42px;
 }
+h3, .h3 {
+    font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif!important;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    text-transform: none;
+    letter-spacing: -0.003em;
+    line-height: 46px;
+    color: rgba(49,50,51,1);
+}

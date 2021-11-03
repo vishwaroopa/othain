@@ -7,27 +7,26 @@ const homepage = () => {
     return (
         <Query query={HOMEPAGE_QUERY} id={null}>
             {({ data: { homepage } }) => {
+                const imageUrl =
+                    process.env.NODE_ENV !== "development"
+                        ? homepage.Aboutus.image.url
+                        : process.env.REACT_APP_BACKEND_URL + homepage.Aboutus.image.url;
                 return (
                     <div id='about'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-xs-12 col-md-6 aboutus'>
-                                    <div className='list-style'>
-                                        
-                                        <h3>{homepage.info.title}</h3>
-                                            <ReactMarkdown source={homepage.info.description} />
-                                                
-                                         
-                                        
-                                    </div>
-                                </div>
                                 <div className='col-xs-12 col-md-6'>
                                     <div className='about-text'>
                                         <h2> {homepage.Aboutus.title}</h2>
-                                        <ReactMarkdown source={homepage.Aboutus.description} />  
-                                        
+                                        <ReactMarkdown source={homepage.Aboutus.description} />
+
                                     </div>
                                 </div>
+                                <div className='col-xs-12 col-md-6'>
+                                    <img src={imageUrl} alt="Mavin Infotech" class="item_sub" />
+ 
+                                </div>
+                              
                             </div>
                         </div>
                     </div>

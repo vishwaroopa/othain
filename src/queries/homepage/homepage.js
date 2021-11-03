@@ -8,6 +8,9 @@ id
         id
 title
 description
+image {
+url
+}
       }
 seo {
 shareImage {
