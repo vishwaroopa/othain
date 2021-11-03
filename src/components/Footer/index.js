@@ -45,7 +45,7 @@ const Footer = () => {
                         <div className='contact-item'>
                             <p>
                                 <span>
-                                    <i className='fa fa-fax'></i> {global.Footer.number1}<br />
+                                    <i className='fa fa fa-headphones'></i> {global.Footer.number1}<br />
                 </span>
                             </p>
                         </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                         <div className='contact-item'>
                             <p>
                                 <span>
-                                    <i className='fa fa-fax'></i> {global.Footer.number1}<br />
+                                    <i className='fa fa-headphones'></i> {global.Footer.number1}<br />
                                 </span>
                             </p>
                         </div>
@@ -103,6 +103,26 @@ const Footer = () => {
                         <div className='contact-item'>
                             <p>
                                 ORACLE
+                            </p>
+                        </div>
+                        <div className='contact-item'>
+                            <p>
+                                Manual Testing
+                            </p>
+                        </div>
+                        <div className='contact-item'>
+                            <p>
+                                Master Data Managment
+                            </p>
+                        </div>
+                        <div className='contact-item'>
+                            <p>
+                                Finance And Accounting
+                            </p>
+                        </div>
+                        <div className='contact-item'>
+                            <p>
+                                Robotic Process Automation
                             </p>
                         </div>
                        

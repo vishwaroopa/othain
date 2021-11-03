@@ -5,7 +5,7 @@
     display: none !important;
 }
 h1 {
-    font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+       font-family: "Poppins",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
@@ -225,14 +225,15 @@ img:hover {
     top: 50%;
     color: #627aff;
     font-size: 30px;
+    display:none;
 }
 .contact-item .fa {
     font-weight: 700;
-    color: #627aff;
+    color: rgba(3,82,210,1);
 }
 
 #contacts h4 {
-    color: #627aff;
+    color: rgba(3,82,210,1);
     margin-top: -10px;
     margin-bottom: 10px;
     font-size: 17px;
@@ -256,10 +257,13 @@ img:hover {
 #contacts, .App #testimonials23, .job_detail {
     margin-top: 80px;
 }
+#contact img {
+    width: 212px;
+}
 #contacts #contact .social i.fa {
-        border: 2px solid #1e6ea6!important;
-        color: #1e6ea6!important;
-    }
+    border: 2px solid #1e6ea6 !important;
+    color: #1e6ea6 !important;
+}
     #contacts #contact {
         BACKGROUND: NONE !important;
         PADDING: 0PX !important;
