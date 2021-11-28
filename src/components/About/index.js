@@ -23,7 +23,7 @@ const homepage = () => {
                                     </div>
                                 </div>
                                 <div className='col-xs-12 col-md-6'>
-                                    <img src={imageUrl} alt="Mavin Infotech" class="item_sub" />
+                                    <img src={homepage.Aboutus.image.url} alt="Mavin Infotech" class="item_sub" />
  
                                 </div>
                               

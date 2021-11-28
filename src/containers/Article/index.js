@@ -10,29 +10,18 @@ const Article = () => {
   let { id } = useParams();
   return (
     <Query query={ARTICLE_QUERY} slug={id}>
-      {({ data: { articles } }) => {
-        const imageUrl =
-          process.env.NODE_ENV !== "development"
-            ? articles[0].image.url
-            : process.env.REACT_APP_BACKEND_URL + articles[0].image.url;
+      {({ data: { page } }) => {
+        
         return (
           <div>
-            <div
-              id="banner"
-              className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-              data-src={imageUrl}
-              data-srcset={imageUrl}
-              data-uk-img
-            >
-              <h1>{articles[0].title}</h1>
-            </div>
-
-            <div className="uk-section">
-              <div className="uk-container uk-container-small">
-                <ReactMarkdown source={articles[0].content} />
-                
-              </div>
-            </div>
+                       
+                        <div className="page">
+                           
+                            <div id="page-content" className="content" dangerouslySetInnerHTML={{
+                                __html: page.content 
+                            }}></div>
+                        </div>
+ 
           </div>
         );
       }}

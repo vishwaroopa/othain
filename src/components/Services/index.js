@@ -11,20 +11,23 @@ const Services = () => {
                     <div id='services' className='text-center'>
                         <div className='container'>
                             <div className='section-title'>
-                                <h2>Our Products</h2>
+                                <h2>What we specialize in
+Industries we serve and what differentiates us from the rest.</h2>
                                
                             </div>
                             <div className='row'>
                                 {products.map((product, i) => {
                                     return (
-                                        <div  className='col-md-4'>
-                            {' '}
-                                            <i className={product.icons}></i>
+                                        <div className='col-md-4'>
+                                            <div className='col-md-4'>
+                                                <div className='service-icon'>
+                                                    <i className={product.icons}></i></div></div>
+                                            <div className='col-md-8'>
                             <div className='service-desc'>
                                                 <h3>{product.title}</h3>
                                                 <p>{product.description}</p>
-                                                <h3><Link to={product.url} className='btn'><img src={logo} alt="LearnMore-button.png" /></Link></h3>
-                            </div>
+                                                </div>
+                                                </div>
                         </div>
 
                                        

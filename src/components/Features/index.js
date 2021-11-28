@@ -11,8 +11,8 @@ const Features = () => {
         <div id='features' className='text-center'>
             <div className='container'>
                 <div className='col-md-10 col-md-offset-1 section-title'>
-                                <h2>Our people do amazing things to help businesses and communities solve their toughest challenges</h2>
-                                <p>Our focus is in the business process and technology management space, offering a broad portfolio of industry-specific services.</p>
+                                <h4>Our people do amazing things to help businesses and communities solve their toughest challenges</h4>
+                                <h6>Our focus is in the business process and technology management space, offering a broad portfolio of industry-specific services.</h6>
                 </div>
                                 <div className='row'>
                                     {features.map((feature, i) => {

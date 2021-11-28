@@ -8,6 +8,7 @@ import Search from "../../components/Search";
 import  Services  from '../../components/Services'
 import Articles from "../Articles";
 import Article from "../Article";
+import Home from "../Home";
 import Job from "../Job";
 import Category from "../Category";
 //import { Navigation } from '../../components/navigation'
@@ -28,29 +29,16 @@ function App() {
   return (
     <div className="App">
           <Nav />
-          <Route path="/" component={Sliders} exact />
-          <Route path="/" component={Features} exact />
-        
-          <Route path="/" component={About} exact />
-          <Route path="/" component={Projects} exact />
-          <Route path="/" component={Services} exact />
-          <Route path="/" component={Banner} exact />
+          <Route path="/" component={Home} exact />
          
       <Switch>
-              <Route path="/menu/contact-us" component={Email} exact />
-              <Route path="/content/contact-us" component={Email} exact />
-              <Route path="/content/jobs" component={Jobs} exact />
-              <Route path="/content/search" component={Search} exact />
-              <Route path="/content/submit-resume" component={Resumes} exact />
-              <Route path="/content/:id" component={Article} exact />
-              <Route path="/jobs/:id" component={Job} exact />
-              <Route path="/menu/:id" component={Category} exact />
+              <Route path="/othain2/:id" component={Article} exact />
              
               
           </Switch>
           
          
-          <Footer />
+        
           
           
     </div>

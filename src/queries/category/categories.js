@@ -1,27 +1,32 @@
 import gql from "graphql-tag";
 
 const CATEGORIES_QUERY = gql`
-  query Categories {
-    categories( sort:"sorting:asc") {
-    slug
-    name
-url
-sorting
-articles {
-        slug
-        title
-        content
-        image {
+{
+    menuItems(where: {parentId: "null", location: MAIN_NAV}) {
+    nodes {
+      id
+      label
+      parentId
+      path
+      title
+      url
+      childItems {
+        nodes {
+          id
+          label
+          title
+          path
           url
-        }
-        category {
-          slug
-          name
+          parentId
+          description
+          linkRelationship
+          locations
+          menuItemId
         }
       }
-
+    }
   }
-}
+  }
 
 `;
 

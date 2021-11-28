@@ -4,7 +4,7 @@ import { HttpLink } from "apollo-link-http";
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-    uri: `${process.env.REACT_APP_BACKEND_URL}/graphql`
+    uri: `https://ec2-18-233-0-142.compute-1.amazonaws.com/graphql`
 });
 const client = new ApolloClient({
   cache,

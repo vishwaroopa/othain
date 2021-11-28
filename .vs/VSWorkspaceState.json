@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Resumes",
+    "\\src\\components\\Nav",
     "\\src\\containers",
-    "\\src\\containers\\Job",
-    "\\src\\data",
+    "\\src\\containers\\App",
+    "\\src\\containers\\Article",
     "\\src\\queries",
-    "\\src\\queries\\jobs",
-    "\\src\\queries\\products"
+    "\\src\\queries\\article",
+    "\\src\\queries\\category"
   ],
-  "SelectedNode": "\\src\\queries\\article\\article.js",
+  "SelectedNode": "\\src\\components\\Nav\\index.js",
   "PreviewInSolutionExplorer": false
 }

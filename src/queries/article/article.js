@@ -1,20 +1,15 @@
 import gql from "graphql-tag";
 
 const ARTICLE_QUERY = gql`
-  query Article($slug: String!){
-    articles(where: {slug: $slug}) {
-      slug
-      title
+query Article($slug: ID!){
+  page(id: $slug, idType: URI) {
+    id
+    databaseId
+    title
+    uri
+    slug
 content
-      category {
-        slug
-        name
-      }
-      image {
-        url
-      }
-    }
-  }
-`;
+}
+}`;
 
 export default ARTICLE_QUERY;

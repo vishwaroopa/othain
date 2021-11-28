@@ -6,7 +6,6 @@ import { useParams } from "react-router";
 import Articles from "../../components/Articles";
 import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 import CATEGORIES_QUERY from "../../queries/category/categories";
-import GLOBAL_QUERY from "../../queries/global/global";
 import logo from '../../assets/logo.png';
 function showAlert() {
     document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
@@ -16,14 +15,7 @@ function showAlert1() {
     document.getElementById("bs-example-navbar-collapse-1").style.height = "auto";
 }
 function sayHello(test) {
-    console.log(test);
- if (test == "contact-us") {
-        document.getElementById("bs-example-navbar-collapse-1").style.display = "none";
-        console.log("if-y");
-    }
-    else {
-        console.log("else");
-    }
+
 }
 
 class Nav extends React.Component {
@@ -31,7 +23,7 @@ class Nav extends React.Component {
         return (
             <div>
                 <Query query={CATEGORIES_QUERY} id={null}>
-                    {({ data: { categories } }) => {
+                    {({ data: { menuItems } }) => {
                         return (
 
                             <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -49,7 +41,7 @@ class Nav extends React.Component {
                                             <span className='icon-bar'></span>{' '}
                                             <span className='icon-bar'></span>{' '}
                                         </button>
-                                        <Link to="/"><img class="logo-menu" src={logo} /></Link>
+                                        <Link to="/"><img src={logo} /></Link>
                                     </div>
 
                                     <div
@@ -57,23 +49,26 @@ class Nav extends React.Component {
                                         id='bs-example-navbar-collapse-1'
                                     >
                                         <ul className='nav navbar-nav navbar-right'>
-                                            {categories.map((category, i) => {
+                                            {menuItems.nodes.map((node, i) => {
+                                                var person = node.childItems.nodes.length;
                                                 return (
-                                                    <li class="nav-item dropdown" key={category.slug} onClick={() => sayHello(category.slug)}>
+                                                    <li className="nav-item dropdown">
                                                         <Link
-                                                            to={category.url}
+                                                            to={node.path}
                                                             className="uk-link-reset"
                                                         >
-                                                            {category.name}
+                                                            {node.label}
                                                         </Link>
-                                                        <ul class="dropdown-menu" id={`${category.slug}1`}>
-                                                            {category.articles.map(function (articles, i) {
-                                                                return <li onClick={showAlert}> <Link
-                                                                    to={`/content/${articles.slug}`}
+                                                        {person > 0 && (
+                                                            <ul className="dropdown-menu">
+                                                            {node.childItems.nodes.map(function (articles, i) {
+                                                                return <li > <Link
+                                                                    to={`${articles.path}`}
                                                                     className="dropdown-item"
-                                                                >{articles.title}</Link></li>
+                                                                >{articles.label}</Link></li>
                                                             })}
-                                                        </ul>
+                                                            </ul>
+                                                        )}
                                                     </li>
                                                 );
                                             })}
