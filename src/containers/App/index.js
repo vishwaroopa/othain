@@ -32,7 +32,7 @@ function App() {
           <Route path="/" component={Home} exact />
          
       <Switch>
-              <Route path="/othain2/:id" component={Article} exact />
+              <Route path="/:id" component={Article} exact />
              
               
           </Switch>
