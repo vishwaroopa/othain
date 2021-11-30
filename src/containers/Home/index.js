@@ -15,7 +15,7 @@ const Home = () => {
                 return (
                     <div>
 
-                        <div className="page">
+                        <div className="pages">
 
                             <div id="page-content" className="content" dangerouslySetInnerHTML={{
                                 __html: page.content

@@ -1,25 +1,14 @@
 import gql from "graphql-tag";
 
 const HOMEPAGE_QUERY = gql`
-  query Global {
-    global {
-
-defaultSeo {
-shareImage {
-url
-}
-}
-Footer {
-address
-number
-number1
-duns
-email
-copyright
+query Global{
+  post(id: 5545, idType: DATABASE_ID) {
+    id
+    databaseId
+    title
+    uri
+    slug
 content
 }
-    }
-  }
-`;
-
+}`;
 export default HOMEPAGE_QUERY;

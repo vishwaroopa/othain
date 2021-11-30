@@ -10448,7 +10448,7 @@ h6.gallery-side-heading {
     }
 
     h4, .h4 {
-        font-size: 24px;
+        font-size: 24px!important;
         line-height: 36px
     }
 }
@@ -10630,6 +10630,9 @@ a {
 
 .tatsu-BZPhcZ5vs ul, .tatsu-YysghquGS ul, .tatsu-6WUAibEye_ ul, .tatsu-module ul {
     list-style: disc;
+    padding-left: 1.3em;
+    line-height: inherit;
+    margin: 0 0 20px;
 }
 .tatsu-57SdaYJxya p, .tatsu-module p {
     padding-bottom: 25px;
@@ -16543,4 +16546,21 @@ body.rtl .wpforms-field-phone input[type=tel] {
     direction: ltr;
     unicode-bidi: embed;
     text-align: right;
+}
+.be-button-wrap:last-child, .be-button-wrap :last-child, .carousel-wrap:last-child, .tatsu-column-pad > :last-child, .tatsu-module :last-child {
+    margin-bottom: 0 !important;
+}
+div,h4,p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+}
+.tatsu-normal-button .tatsu-button {
+    border:0;
 }

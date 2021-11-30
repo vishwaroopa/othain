@@ -1,32 +1,16 @@
 import gql from "graphql-tag";
 
 const CATEGORIES_QUERY = gql`
-{
-    menuItems(where: {parentId: "null", location: MAIN_NAV}) {
-    nodes {
-      id
-      label
-      parentId
-      path
-      title
-      url
-      childItems {
-        nodes {
-          id
-          label
-          title
-          path
-          url
-          parentId
-          description
-          linkRelationship
-          locations
-          menuItemId
-        }
-      }
-    }
-  }
-  }
+query Global{
+  post(id: 4828, idType: DATABASE_ID) {
+    id
+    databaseId
+    title
+    uri
+    slug
+content
+}
+}
 
 `;
 

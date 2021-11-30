@@ -30,7 +30,7 @@ function App() {
     <div className="App">
           <Nav />
           <Route path="/" component={Home} exact />
-         
+         <Footer />
       <Switch>
               <Route path="/backend/:id" component={Article} exact />
              
